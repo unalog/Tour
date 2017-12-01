@@ -15,6 +15,7 @@
 		B5F28C241FD1087200567B86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5F28C221FD1087200567B86 /* LaunchScreen.storyboard */; };
 		B5F28C2F1FD1087200567B86 /* TourTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F28C2E1FD1087200567B86 /* TourTests.swift */; };
 		B5F28C3A1FD1087200567B86 /* TourUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F28C391FD1087200567B86 /* TourUITests.swift */; };
+		B5F28C4B1FD1095F00567B86 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F28C4A1FD1095F00567B86 /* NetworkManager.swift */; };
 		BB11956CEC81920E5F024685 /* Pods_TourTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D238C89624389B1582773B64 /* Pods_TourTests.framework */; };
 		FC9894762B4411C5B22E1062 /* Pods_TourUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 365C3C2EE19FDF211754BC9C /* Pods_TourUITests.framework */; };
 /* End PBXBuildFile section */
@@ -55,6 +56,7 @@
 		B5F28C351FD1087200567B86 /* TourUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TourUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5F28C391FD1087200567B86 /* TourUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourUITests.swift; sourceTree = "<group>"; };
 		B5F28C3B1FD1087200567B86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5F28C4A1FD1095F00567B86 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		C6523C1FA20529B432C7A806 /* Pods-TourUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TourUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TourUITests/Pods-TourUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D238C89624389B1582773B64 /* Pods_TourTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TourTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D43EC92147902EBF3BF85409 /* Pods-TourTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TourTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TourTests/Pods-TourTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -124,8 +126,10 @@
 		B5F28C181FD1087200567B86 /* Tour */ = {
 			isa = PBXGroup;
 			children = (
+				B5F28C491FD1094F00567B86 /* View */,
+				B5F28C481FD1094500567B86 /* ViewModel */,
+				B5F28C471FD1093800567B86 /* Model */,
 				B5F28C191FD1087200567B86 /* AppDelegate.swift */,
-				B5F28C1B1FD1087200567B86 /* ViewController.swift */,
 				B5F28C1D1FD1087200567B86 /* Main.storyboard */,
 				B5F28C201FD1087200567B86 /* Assets.xcassets */,
 				B5F28C221FD1087200567B86 /* LaunchScreen.storyboard */,
@@ -150,6 +154,29 @@
 				B5F28C3B1FD1087200567B86 /* Info.plist */,
 			);
 			path = TourUITests;
+			sourceTree = "<group>";
+		};
+		B5F28C471FD1093800567B86 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B5F28C4A1FD1095F00567B86 /* NetworkManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B5F28C481FD1094500567B86 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B5F28C491FD1094F00567B86 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B5F28C1B1FD1087200567B86 /* ViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		F63F09B61BCC9B8D9BE26DFA /* Pods */ = {
@@ -476,6 +503,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5F28C4B1FD1095F00567B86 /* NetworkManager.swift in Sources */,
 				B5F28C1C1FD1087200567B86 /* ViewController.swift in Sources */,
 				B5F28C1A1FD1087200567B86 /* AppDelegate.swift in Sources */,
 			);
