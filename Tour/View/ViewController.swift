@@ -10,8 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var viewModel:ListViewModel?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        viewModel = ListViewModel();
+        viewModel?.loadData();
         // Do any additional setup after loading the view, typically from a nib.
     }
 
