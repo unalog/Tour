@@ -9,6 +9,7 @@ target 'Tour' do
     pod 'RxSwift',    '~> 4.0'
     pod 'RxCocoa',    '~> 4.0'
     pod 'Alamofire', '~> 4.5'
+    pod 'SwiftyJSON'
 
   target 'TourTests' do
     inherit! :search_paths
@@ -16,6 +17,7 @@ target 'Tour' do
     pod 'RxSwift',    '~> 4.0'
     pod 'RxCocoa',    '~> 4.0'
     pod 'Alamofire', '~> 4.5'
+    pod 'SwiftyJSON'
   end
 
   target 'TourUITests' do
@@ -24,6 +26,7 @@ target 'Tour' do
     pod 'RxSwift',    '~> 4.0'
     pod 'RxCocoa',    '~> 4.0'
     pod 'Alamofire', '~> 4.5'
+    pod 'SwiftyJSON'
   end
 
 end
