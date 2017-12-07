@@ -21,15 +21,13 @@ class NetworkManager: Any {
         return Observable<Any>.create({ (obserbable) -> Disposable in
             
             
-            let url = "http://api.visitkorea.or.kr/openapi/service/rest/KorService/areaCode"
-            let parameters: Parameters = ["serviceKey": "75xv7sV%2FeAJ90ck6Mupkrv1aUVcquW0FhZKUnZKiyPLlcEK5Z4Tb0KwBc4JtOaYsJ577wErxz1pYPiyAPfWtZw%3D%3D" ,"numOfRows":"10" ,"pageSize":"10" ,"pageNo":"10" ,"startPage":"1" ,"MobileOS":"IOS" ,"MobileApp":"AppTest" ,"areaCode":"1", "_type":"json"]
-            let headers: HTTPHeaders = [
-                "Accept": "application/json"
-            ]
+            let url = "https://api.blockchain.info/charts/transactions-per-second"
+            let parameters: Parameters = ["timespan": "5weeks" ,"rollingAverage":"8hours" ,"format":"json"]
+           
             
-            Alamofire.request(url, method: .get, parameters: parameters, encoding: URLEncoding.default, headers: headers)
+            Alamofire.request(url, parameters: parameters)
                 .responseJSON { response in
-                    //print(" - API url: \(String(describing: response.request!))")   // original url request
+                    print(" - API url: \(String(describing: response.request!))")   // original url request
                     var statusCode = response.response?.statusCode
                     
                     switch response.result {

@@ -13,26 +13,6 @@ import SwiftyJSON
 class ListViewModel: NSObject {
 
     
-    
-    func test(){
-        
-        let disbposeBag = DisposeBag()
-        
-        
-        _ = Observable.just("1").subscribe(onNext: { (data) in
-             print("onNext")
-        }, onError: { (error) in
-            print("onError")
-        }, onCompleted: {
-            print("completed")
-        }, onDisposed: {
-            print("onDisposeable")
-        })
-        .disposed(by: disbposeBag)
-       
-       
-        
-    }
     func loadData(){
 
         let networking = NetworkManager();
